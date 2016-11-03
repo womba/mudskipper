@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#########################
+#Blacklist Speakers	#
+#########################
+
+
+echo blacklist pcspkr >> /etc/modprobe.d/spkr.conf
+
+
+
+
+
+
+
+
+
+
