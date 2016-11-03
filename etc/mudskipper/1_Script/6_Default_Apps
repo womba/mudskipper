@@ -70,6 +70,7 @@ pacman --noconfirm -S libreoffice-still libreoffice-still-de
 
 pacman --noconfirm -S firefox
 pacman --noconfirm -S firefox-i18n-de
+pacman --noconfirm -S firefox-adblock-plus
 
 pacman --noconfirm -S thunderbird
 pacman --noconfirm -S thunderbird-i18n-de
