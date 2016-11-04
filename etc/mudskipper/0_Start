@@ -7,7 +7,7 @@ then
 fi
 
 MOUNTPOINT=/etc/mudskipper/mount
-SCRIPTPATH=/etc/mudskipper/Script
+SCRIPTPATH=/etc/mudskipper
 
 ##ooooooooooooooooooooooooooooooooooooooooooooo##
 #						#
@@ -36,17 +36,8 @@ wget -q  --timeout=20 --spider http://kernel.org
 done
 
 
+
 source ./1_Script/1_Base
-
-
-#########################
-#Creating Install Path	#
-#########################
-
-
-mkdir -p $MOUNTPOINT$SCRIPTPATH
-cp -Rf ./* $MOUNTPOINT$SCRIPTPATH
-cp -Rf ./.git $MOUNTPOINT$SCRIPTPATH
 
 ##ooooooooooooooooooooooooooooooooooooooooooooo##
 #						#
@@ -54,6 +45,13 @@ cp -Rf ./.git $MOUNTPOINT$SCRIPTPATH
 #						#
 ##ooooooooooooooooooooooooooooooooooooooooooooo##
 
+##############################
+#Download Mudskipper Script  #
+##############################
+
+git clone https://github.com/womba/mudskipper /tmp/mudskipper
+cp -R /tmp/mudskipper/* $MOUNTPOINT
+rm -R /tmp/mudskipper
 
 #########################
 #Boot Script		#

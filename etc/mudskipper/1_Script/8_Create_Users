@@ -2,7 +2,7 @@
 
 USER=
 pacman -S --noconfirm sudo
-SCRIPTPATH=/etc/mudskipper/Script
+SCRIPTPATH=/etc/mudskipper
 
 
 function changepass {
