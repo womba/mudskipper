@@ -24,7 +24,7 @@ rm -R /tmp/$1
 #Install Packages	#
 #########################
 
-
+womba womba
 womba telegram
 womba desktop-default
 womba icons-shadowless
