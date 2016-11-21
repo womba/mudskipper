@@ -160,7 +160,7 @@ swapoff $DEVICE* &> /dev/null
 echo
 echo
 mkfs.ext4 -F $DEVICE
-dd if=/dev/zero of=$DEVICE bs=512 count=17
+dd if=/dev/zero of=$DEVICE bs=512 count=20
 
 #########################
 #Creating Partitions    #
