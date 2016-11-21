@@ -4,21 +4,19 @@
 #Install Dependencies	#
 #########################
 
-sudo pacman -S --noconfirm qtwebkit
-sudo pacman -S --noconfirm phonon-qt4
-sudo pacman -S --noconfirm quazip-qt4
-sudo pacman -S --noconfirm qtkeychain-qt4
-sudo pacman -S --noconfirm attica-qt4
-sudo pacman -S --noconfirm liblastfm
-sudo pacman -S --noconfirm libechonest
-sudo pacman -S --noconfirm lucene++
-sudo pacman -S --noconfirm qjson
-sudo pacman -S --noconfirm qca
+pacman -S --noconfirm qtwebkit
+pacman -S --noconfirm phonon-qt4
+pacman -S --noconfirm attica-qt4
+pacman -S --noconfirm liblastfm
+pacman -S --noconfirm libechonest
+pacman -S --noconfirm lucene++
+pacman -S --noconfirm qjson
+pacman -S --noconfirm qca
 
-sudo pacman -S --noconfirm cmake
-sudo pacman -S --noconfirm sparsehash
-sudo pacman -S --noconfirm boost
-sudo pacman -S --noconfirm websocketpp
+pacman -S --noconfirm cmake
+pacman -S --noconfirm sparsehash
+pacman -S --noconfirm boost
+pacman -S --noconfirm websocketpp
 
 
 #########################
@@ -55,6 +53,8 @@ womba rune-app-folder-plus
 womba rune-bash-profile
 womba rune-terminal-color
 womba rune-wallpaper
+womba qtkeychain-qt4
+womba quazip-qt4
 
 systemctl enable runecore.service
 
