@@ -49,7 +49,7 @@ pacman --noconfirm -S asunder
 
 pacman --noconfirm -S brasero
 
-pacman --noconfirm -S file-roller
+pacman --noconfirm -S ark
 
 pacman --noconfirm -S gnome-calendar
 
