@@ -55,6 +55,7 @@ womba rune-terminal-color
 womba rune-wallpaper
 womba qtkeychain-qt4
 womba quazip-qt4
+womba tomahawk
 
 systemctl enable runecore.service
 
