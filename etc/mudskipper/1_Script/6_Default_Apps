@@ -21,9 +21,6 @@ pacman --noconfirm -S gimp
 #########################
 
 
-pacman --noconfirm -S gnome-music
-
-
 pacman --noconfirm -S kdenlive
 
 
