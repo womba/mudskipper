@@ -45,7 +45,7 @@ rm -R /tmp/$1
 
 womba womba
 womba telegram
-#womba desktop-default
+womba desktop-default
 womba icons-shadowless
 womba rune-core
 womba rune-app-folder
