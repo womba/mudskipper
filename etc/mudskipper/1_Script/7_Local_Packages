@@ -56,6 +56,6 @@ womba rune-wallpaper
 womba qtkeychain-qt4
 womba quazip-qt4
 womba tomahawk
-
+womba firefox-ublock
 systemctl enable runecore.service
 
