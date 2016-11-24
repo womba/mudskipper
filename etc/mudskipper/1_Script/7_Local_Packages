@@ -57,7 +57,7 @@ womba quazip-qt4
 womba tomahawk
 womba firefox-ublock
 womba desktop-default
-
+womba dash-to-dock
 
 systemctl enable runecore.service
 
