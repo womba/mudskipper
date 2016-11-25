@@ -59,6 +59,7 @@ womba firefox-ublock
 womba desktop-default
 womba dash-to-dock
 womba rune-gnome-extensions
+womba rune-dash-settings
 
 systemctl enable runecore.service
 
