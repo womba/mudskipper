@@ -7,13 +7,12 @@
 #                                               #
 ##ooooooooooooooooooooooooooooooooooooooooooooo##
 
-
 #########################
-#Images Folder		#
+#System Folder          #
 #########################
 
 
-pacman --noconfirm -S gimp
+pacman --noconfirm -S gnome-software
 
 
 #########################
@@ -74,13 +73,12 @@ pacman --noconfirm -S thunderbird-i18n-de
 
 pacman --noconfirm -S telepathy
 
-
 #########################
-#System Folder		#
+#Images Folder          #
 #########################
 
 
-pacman --noconfirm -S gnome-software
+pacman --noconfirm -S gimp
 
 
 ##ooooooooooooooooooooooooooooooooooooooooooooo##
