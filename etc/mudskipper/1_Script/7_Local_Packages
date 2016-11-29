@@ -24,8 +24,8 @@ pacman -S --noconfirm websocketpp
 #########################
 
 
-rm -R /usr/share/backgrounds
-rm -R /usr/share/gnome-background-properties
+#rm -R /usr/share/backgrounds
+#rm -R /usr/share/gnome-background-properties
 
 #########################
 #Womba Function		#
@@ -47,11 +47,12 @@ womba womba
 womba telegram
 womba icons-shadowless
 womba rune-core
+womba rune-sounds
 womba rune-app-folder
 womba rune-app-folder-plus
 womba rune-bash-profile
 womba rune-terminal-color
-womba rune-wallpaper
+#womba rune-wallpaper
 womba qtkeychain-qt4
 womba quazip-qt4
 womba tomahawk
