@@ -53,9 +53,6 @@ womba rune-app-folder-plus
 womba rune-bash-profile
 womba rune-terminal-color
 #womba rune-wallpaper
-womba qtkeychain-qt4
-womba quazip-qt4
-womba tomahawk
 womba firefox-ublock
 womba desktop-default
 womba dash-to-dock
