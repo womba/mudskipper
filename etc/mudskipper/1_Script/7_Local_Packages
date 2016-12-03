@@ -61,6 +61,9 @@ womba desktop-default
 womba dash-to-dock
 womba rune-gnome-extensions
 womba rune-dash-settings
+womba gnome-top-left-corner
+womba gnome-topicons
+womba gnome-impatience
 
 systemctl enable runecore.service
 
