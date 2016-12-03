@@ -1,23 +1,5 @@
 #!/bin/bash
 
-#########################
-#Install Dependencies	#
-#########################
-
-pacman -S --noconfirm qtwebkit
-pacman -S --noconfirm phonon-qt4
-pacman -S --noconfirm attica-qt4
-pacman -S --noconfirm liblastfm
-pacman -S --noconfirm libechonest
-pacman -S --noconfirm lucene++
-pacman -S --noconfirm qjson
-pacman -S --noconfirm qca
-
-pacman -S --noconfirm cmake
-pacman -S --noconfirm sparsehash
-pacman -S --noconfirm boost
-pacman -S --noconfirm websocketpp
-
 
 #########################
 #Remove Configuration	#
