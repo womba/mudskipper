@@ -22,6 +22,7 @@ pacman --noconfirm -S gnome-software
 
 pacman --noconfirm -S kdenlive
 
+pacman --noconfirm -S lollypop
 
 #########################
 #Games Folder		#
