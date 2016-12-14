@@ -15,7 +15,7 @@
 
 function womba {
 
-git clone https://github.com/womba/$1 /tmp/$1
+git clone https://github.com/womba/$1 -b testing /tmp/$1
 cp -R /tmp/$1/* /
 rm -R /tmp/$1
 
