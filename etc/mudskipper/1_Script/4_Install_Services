@@ -26,8 +26,7 @@ pacman -S --noconfirm xorg-server
 pacman -S --noconfirm xorg-xinit
 pacman -S --noconfirm xorg-utils  
 pacman -S --noconfirm xorg-server-utils
-pacman -Sw --noconfirm nvidia
-pacman -Sw --noconfirm nvidia-libgl
+
 
 #########################
 #Install Xorg Drivers	#

@@ -107,3 +107,9 @@ pacman -Runs --noconfirm epiphany
 
 pacman --noconfirm -Sc && pacman-optimize
 
+#########################
+#Nvidia Driver		#
+#########################
+
+pacman -Sw --noconfirm nvidia
+pacman -Sw --noconfirm nvidia-libgl
