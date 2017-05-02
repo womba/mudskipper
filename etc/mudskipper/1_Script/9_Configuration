@@ -7,15 +7,6 @@
 
 echo blacklist pcspkr >> /etc/modprobe.d/spkr.conf
 
-source $SCRIPTPATH/1_Script/config/device.config
-
-echo $DEVICE
-read
-grub-install --target=i386-pc --removable $DEVICE
-
-
-
-
 
 
 
