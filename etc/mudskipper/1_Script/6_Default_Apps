@@ -7,12 +7,41 @@
 #                                               #
 ##ooooooooooooooooooooooooooooooooooooooooooooo##
 
+function checkman {
+
+Installed=false
+
+while [ "$Installed" = "false" ]
+do
+
+x=`pacman -Qs $1`
+
+
+if [ -n "$x" ]
+ then
+        echo
+        echo Package $1 successfully Installed.
+        Installed=true
+ else
+        echo Package $1 not Installed.
+        echo
+        echo Installing $1 ...
+	pacman --noconfirm -S $1
+fi
+
+
+done
+
+}
+
+
+
 #########################
 #System Folder          #
 #########################
 
 
-pacman --noconfirm -S gnome-software
+checkman gnome-software
 
 
 #########################
@@ -20,22 +49,22 @@ pacman --noconfirm -S gnome-software
 #########################
 
 
-pacman --noconfirm -S kdenlive
+checkman kdenlive
 
-pacman --noconfirm -S lollypop
+checkman lollypop
 
 #########################
 #Games Folder		#
 #########################
 
 
-pacman --noconfirm -S aisleriot
+checkman aisleriot
 
-pacman --noconfirm -S gnome-mines
+checkman gnome-mines
 
-pacman --noconfirm -S gnome-sudoku
+checkman gnome-sudoku
 
-pacman --noconfirm -S gnome-2048
+checkman gnome-2048
 
 
 #########################
@@ -43,43 +72,44 @@ pacman --noconfirm -S gnome-2048
 #########################
 
 
-pacman --noconfirm -S gedit
+checkman gedit
 
-pacman --noconfirm -S asunder
+checkman asunder
 
-pacman --noconfirm -S brasero
+checkman brasero
 
-pacman --noconfirm -S file-roller
+checkman file-roller
 
-pacman --noconfirm -S gnome-calendar
+checkman gnome-calendar
 
 
 #########################
 #Office Folder		#
 #########################
 
-pacman --noconfirm -S libreoffice-still libreoffice-still-de
+checkman libreoffice-still 
+checkman libreoffice-still-de
 
 #########################
 #Web Folder		#
 #########################
 
 
-pacman --noconfirm -S firefox
-pacman --noconfirm -S firefox-i18n-de
+checkman firefox
+checkman firefox-i18n-de
 
 
-pacman --noconfirm -S thunderbird
-pacman --noconfirm -S thunderbird-i18n-de
+checkman thunderbird
+checkman thunderbird-i18n-de
 
-pacman --noconfirm -S telepathy
+checkman telepathy
 
 #########################
 #Images Folder          #
 #########################
 
 
-pacman --noconfirm -S gimp
+checkman gimp
 
 
 ##ooooooooooooooooooooooooooooooooooooooooooooo##
@@ -94,8 +124,8 @@ pacman --noconfirm -S gimp
 #########################
 
 
-pacman -S --noconfirm wget
-pacman -S --noconfirm git
+checkman wget
+checkman git
 
 #########################
 #Remove Unused Apps	#
