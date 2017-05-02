@@ -11,7 +11,7 @@ SCRIPTPATH=/etc/mudskipper
 source $SCRIPTPATH/1_Script/config/device.config
 
 pacman -S --noconfirm grub efibootmgr
-grub-install --target=i386-pc --debug  --boot-directory=/boot --bootloader-id=grub-bios --removable $DEVICE
+grub-install --target=i386-pc --removable $DEVICE
 echo Press Enter 
 read
 grub-install --target=x86_64-efi  --efi-directory=/boot/EFI --bootloader-id=grub-efi --removable --recheck
