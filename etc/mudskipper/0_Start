@@ -52,7 +52,7 @@ source ./1_Script/1_Base
 git clone https://github.com/womba/mudskipper /tmp/mudskipper
 cp -R /tmp/mudskipper/* $MOUNTPOINT
 rm -R /tmp/mudskipper
-cp -R ./config .$SCRIPTPATH/1_Script
+cp -R ./1_Script/config .$SCRIPTPATH/1_Script
 
 #########################
 #Boot Script		#
