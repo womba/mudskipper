@@ -1,20 +1,50 @@
 #!/bin/bash
 
+function checkman {
+
+Installed=false
+
+pacman --noconfirm -S $1
+
+
+while [ "$Installed" = "false" ]
+do
+
+x=`pacman -Qs $1`
+
+
+if [ -n "$x" ]
+ then
+        echo
+        echo Package $1 successfully Installed.
+        Installed=true
+ else
+        echo Package $1 not Installed.
+        echo
+        echo Installing $1 ...
+        pacman --noconfirm -S $1
+fi
+
+
+done
+
+}
+
 
 #########################
 #Arch Install Scripts	#
 #########################
 
 
-pacman -S --noconfirm arch-install-scripts
-pacman -S --noconfirm dosfstools
+checkman arch-install-scripts
+checkman dosfstools
 
 #########################
 #Other			#
 #########################
 
-pacman -S --noconfirm sudo
-pacman -S --noconfirm jre8-openjdk-headless
+checkman sudo
+checkman jre8-openjdk-headless
 
 
 #########################
@@ -22,10 +52,10 @@ pacman -S --noconfirm jre8-openjdk-headless
 #########################
 
 
-pacman -S --noconfirm xorg-server 
-pacman -S --noconfirm xorg-xinit
-pacman -S --noconfirm xorg-utils  
-pacman -S --noconfirm xorg-server-utils
+checkman xorg-server 
+checkman xorg-xinit
+checkman xorg-utils  
+checkman xorg-server-utils
 
 
 #########################
@@ -33,7 +63,7 @@ pacman -S --noconfirm xorg-server-utils
 #########################
 
 
-pacman -S --noconfirm xorg-drivers
+checkman xorg-drivers
 
 
 #########################
@@ -41,9 +71,9 @@ pacman -S --noconfirm xorg-drivers
 #########################
 
 
-pacman -S  --noconfirm net-tools
-pacman -S  --noconfirm ntp
-pacman -S  --noconfirm avahi
+checkman net-tools
+checkman ntp
+checkman avahi
 
 
 #########################
@@ -51,7 +81,7 @@ pacman -S  --noconfirm avahi
 #########################
 
 
-pacman -S --noconfirm acpid
+checkman acpid
 
 
 #########################
@@ -59,7 +89,7 @@ pacman -S --noconfirm acpid
 #########################
 
 
-pacman -S --noconfirm cronie
+checkman cronie
 
 
 #########################
@@ -67,8 +97,8 @@ pacman -S --noconfirm cronie
 #########################
 
 
-pacman -S --noconfirm alsa-utils
-pacman -S --noconfirm pulseaudio
+checkman alsa-utils
+checkman pulseaudio
 
 
 #########################
@@ -76,8 +106,8 @@ pacman -S --noconfirm pulseaudio
 #########################
 
 
-pacman -S --noconfirm ttf-liberation 
-pacman -S --noconfirm ttf-dejavu
+checkman ttf-liberation 
+checkman ttf-dejavu
 
 
 #########################
@@ -85,18 +115,18 @@ pacman -S --noconfirm ttf-dejavu
 #########################
 
 
-pacman -S --noconfirm gdm
-pacman -S --noconfirm gnome
+checkman gdm
+checkman gnome
 
 
 #########################
 #CD/DVD Support		#
 #########################
 
-pacman -S --noconfirm libcdio 
-pacman -S --noconfirm libdvdread 
-pacman -S --noconfirm libdvdcss 
-pacman -S --noconfirm libdvdnav
+checkman libcdio 
+checkman libdvdread 
+checkman libdvdcss 
+checkman libdvdnav
 
 
 #########################
@@ -104,8 +134,8 @@ pacman -S --noconfirm libdvdnav
 #########################
 
 
-pacman -S --noconfirm ffmpeg
-pacman -S --noconfirm gst-libav
+checkman ffmpeg
+checkman gst-libav
 
 
 #########################
@@ -113,18 +143,18 @@ pacman -S --noconfirm gst-libav
 #########################
 
 
-pacman -S --noconfirm ntfs-3g
-pacman -S --noconfirm exfat-utils 
+checkman ntfs-3g
+checkman exfat-utils 
 
 
 #########################
 #Printer Support	#
 #########################
 
-pacman -S --noconfirm cups
-pacman -S --noconfirm ghostscript
-pacman -S --noconfirm gsfonts
-pacman -S --noconfirm system-config-printer
+checkman cups
+checkman ghostscript
+checkman gsfonts
+checkman system-config-printer
 
 
 #########################
@@ -132,4 +162,4 @@ pacman -S --noconfirm system-config-printer
 #########################
 
 
-pacman -S --noconfirm ifuse
+checkman ifuse
