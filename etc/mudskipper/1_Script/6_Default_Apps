@@ -11,10 +11,13 @@ function checkman {
 
 Installed=false
 
+pacman --noconfirm -S $1
+
 while [ "$Installed" = "false" ]
 do
 
 x=`pacman -Qs $1`
+
 
 
 if [ -n "$x" ]
