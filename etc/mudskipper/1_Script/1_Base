@@ -159,8 +159,8 @@ swapoff $DEVICE* &> /dev/null
 
 echo
 echo
-mkfs.ext4 -F $DEVICE
-dd if=/dev/zero of=$DEVICE bs=512 count=20
+sudo dd if=/dev/zero of=$DEVICE bs=1k count=2048 
+
 
 #########################
 #Creating Partitions    #
